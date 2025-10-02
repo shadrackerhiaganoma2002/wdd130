@@ -1,4 +1,12 @@
 
+:root {
+    --primary-color: #0077b6;
+    --secondary-color: #023e8a;
+    --background-light: #f4f8fb;
+    --hero-bg: #caf0f8;
+    --text-color: #222;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,12 +32,6 @@ header {
 
 header img {
     border-radius: 50%;
-    margin-right: 24px;
-}
-
-nav {
-    display: flex;
-    gap: 24px;
 }
 
 nav a {
@@ -41,15 +43,50 @@ nav a {
     transition: background 0.2s;
 }
 
-nav a:hover {
-    background: #023e8a;
+.socialmedia a {
+    text-decoration: none;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: var(--hero-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    padding: 32px;
+    margin-bottom: 32px;
+    gap: 32px;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 
+.hero-box img {
+    float: right;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
 
-main {
-    max-width: 1100px;
-    margin: 32px auto;
-    padding: 0 16px;
+.hero-msg {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    background: rgba(255,255,255,0.85);
+    padding: 24px;
+    border-radius: 12px;
+    z-index: 2;
+    max-width: 60%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .hero {
