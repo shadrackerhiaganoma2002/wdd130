@@ -1,16 +1,16 @@
+
 main{
     width: auto;
-    margin: 1rem;
+    max-width: 900px;
+    margin: 1rem auto;
     border: 1px solid rgba(236, 240, 243, 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #0f40c5;
     text-align: left;
 }
-
 header{
-   
-     background-color: rgb(199, 206, 211);
+    background-color: rgb(199, 206, 211);
     border-radius: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
     margin: 1rem;
@@ -19,47 +19,48 @@ header{
 
 p{
     font-style: italic;
-    background-color: lightgoldenrodyellow;
+    background-color: #fffbe6;
     border-radius: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
     margin: 1rem;
-    padding: 0.5rem;
+    padding: 1rem;
+    color: #222;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
- img {
+main img {
     display: block;
-    margin: 1rem auto;
+    margin: 0 auto 15px auto;
     border: 1px solid #000;
     padding: 3px;
     background-color: #bbb;
     width: 100px;
     height: auto;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
     box-sizing: border-box;
- }
-
- aside{
-    font-style: italic;
-    background-color: lightgoldenrodyellow;
-    border-radius: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
-    margin: 1rem;
-    padding: 0.5rem;
- }
-
-#aside img {
-    background-color: rgb(22, 65, 97);
-    justify-content: center;
-    border-radius: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
-    margin: 1rem;
-    padding: 0.5rem;
 }
- footer{
-    background-color: rgb(199, 206, 211);
+
+aside img {
+    display: block;
+    margin: 0 auto 20px auto;
+    border: 1px solid #000;
+    padding: 3px;
+    background-color: #bbb;
+    width: 200px;
+    height: auto;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+
+aside p{
+    font-style: italic;
+    background-color: #fffbe6;
     border-radius: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
     margin: 1rem;
-    padding: 0.5rem;
- }
-
-
+    padding: 1rem;
+    color: #222;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
