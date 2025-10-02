@@ -1,6 +1,7 @@
 
 h1 {
     color: #0f40c5;
+    justify-content: center
 }
 main{
     width: auto;
@@ -56,6 +57,19 @@ nav a {
     text-decoration: none;
 }
 
+aside{
+    width: auto;
+    margin: 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    color: #0f40c5;
+}
+
+a h1 {
+    color: #0f40c5;
+    justify-content: center
+}
 
 aside img {
     display: block;
