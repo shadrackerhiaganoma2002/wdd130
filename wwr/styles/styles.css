@@ -1,58 +1,188 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f8fb;
+    color: #222;
     line-height: 1.6;
-    margin: 0;
-    padding: 0 40px;
 }
 
-h1 {
-    border-bottom: 1px solid rgb(0 110 182);
-    padding-bottom: 0;
+header {
+    background: #0077b6;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+header img {
+    border-radius: 50%;
+    margin-right: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background: #023e8a;
 }
 
 
-
-p {
-    margin: 0;
+main {
+    max-width: 1100px;
+    margin: 32px auto;
+    padding: 0 16px;
 }
 
-code {
-    color: darkgreen;
-    font-weight: 700;
-    font-size: 1.4rem;
+.hero {
+    display: flex;
+    align-items: center;
+    background: #caf0f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    padding: 32px;
+    margin-bottom: 32px;
+    gap: 32px;
+    flex-wrap: wrap;
 }
 
-/* Class examples - can be reused */
-
-.box {
-    margin: 20px 0;
-    border: 1px solid rgb(0 0 0 / 10%);
-    padding: 10px;
-    background-color: #ddd; /* this is shorthand for #dddddd */
+.hero-box img {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-.highlight {
-    background-color: #efefaa;
-    border-radius: 25px;
-    padding: 25px;
+.hero-msg {
+    flex: 1;
 }
 
-/* ID examples - should be unique */
-
-#note {
-    background-color: #333;
-    color: white;
-    width: fit-content;
+.hero-msg h1 {
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin-bottom: 12px;
 }
 
-#note code {
-    color: yellow;
+.hero-msg h4 {
+    font-size: 1.25rem;
+    color: #023e8a;
+    margin-bottom: 20px;
 }
 
-#best-practice {
-    background: linear-gradient(135deg, #000 0%, #999 100%);
-    color: white;
-    border-radius: 20px;
-    padding: 20px
+.button-box {
+    margin-top: 16px;
 }
 
+.book {
+    display: inline-block;
+    background: #0077b6;
+    color: #fff;
+    padding: 12px 32px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: background 0.2s;
+}
+
+.book:hover {
+    background: #023e8a;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 32px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+section h2 {
+    color: #0077b6;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+}
+
+section p {
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+}
+
+section img {
+    margin: 8px 12px 8px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    vertical-align: middle;
+}
+
+footer {
+    background: #0077b6;
+    color: #fff;
+    text-align: center;
+    padding: 24px 0 16px 0;
+    margin-top: 48px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+footer p {
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+footer a {
+    display: inline-block;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+
+footer img {
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 800px) {
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+    }
+    main {
+        padding: 0 8px;
+    }
+    header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 8px;
+    }
+    nav {
+        gap: 12px;
+    }
+    section {
+        padding: 16px;
+    }
+}
