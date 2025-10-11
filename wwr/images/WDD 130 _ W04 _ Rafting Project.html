@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 130 | W04 | Rafting Project</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://byui-cse.github.io/cse-ww-program/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://byui-cse.github.io/cse-ww-program/favicon-32x32.png">
+    <link rel="icon" type="image/png" href="https://byui-cse.github.io/cse-ww-program/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/course.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/vs2015.min.css">
+    <script src="https://js-cdn.dynatrace.com/jstag/16294a69b33/bf29241ovs/692a19d31f48cd0e_complete.js"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="page">
+            <h1>WDD 130<span id="coursetitle">: Web Fundamentals</span></h1>
+            <img src="../images/byui-logo.svg" alt="BYU-I logo" class="logo">
+        </div>
+    </header>
+
+    <main class="page">
+        <nav>
+            <span><a href="../">Home</a></span>
+            <span><a href="../week01/">W1</a></span>
+            <span><a href="../week02/">W2</a></span>
+            <span><a href="../week03/">W3</a></span>
+            <span class="active"><a href="../week04/">W4</a></span>
+            <span><a href="../week05/">W5</a></span>
+            <span><a href="../week06/">W6</a></span>
+            <span><a href="../week07/">W7</a></span>
+        </nav>
+
+        <h2>W04 Assignment: Rafting Site &ndash; Update About Us Page</h2>
+
+        <h3>Overview</h3>
+        <p>Continue to work on the rafting site <strong>about.html</strong> page using
+            the wireframe as a guide. The tasks include working on the layout and content of the header,
+            navigation, sections, and footer.</p>
+
+        <h3>Instructions</h3>
+        <ol>
+            <li>Use this updated wireframe as a guide to enhance the layout of the <strong>about.html</strong> page.
+                <figure>
+                    <img src="../images/wwr/wwr-wireframe-aboutus-update.png"
+                        alt="Wireframe Design for Rafting Project About Us Page &ndash; Updated" loading="lazy"
+                        width="550">
+                    <figcaption>Wireframe Design for Updated About Us Page</figcaption>
+                </figure>
+
+            </li>
+
+            <li>Open the <strong>about.html</strong> file and the <strong>rafting.css</strong> files
+                for editing.</li>
+            <li>Continue to make <strong>updates</strong> to the page.</li>
+            <li>Use <strong>CSS Grid</strong> in the <code>header</code> to create the horizontal layout
+                between the logo and the navigation bar.</li>
+            <li>Use <strong>CSS Flex</strong> to create the horizontal layout in the <code>nav</code>.
+                <div class="callout info">
+                    <h4>Help</h4>
+                    <p>Open the HTML file named <strong>header-layout.html</strong> in the <strong>week04</strong>
+                        folder to review an example of using grid in the <code>header</code> and flex in the
+                        <code>nav</code>.
+                    </p>
+                </div>.
+
+            </li>
+            <li>Style the <code>header</code>, <code>img</code>, and <code>nav</code> as
+                needed to create a well designed header that will also be used on the other pages of this
+                rafting site providing a consistent look and feel across the site.
+            </li>
+            <li>Layout the History <code>section</code> elements as shown in the wireframe layout.</li>
+            <li>Style the Adventures <code>section</code> with five images to span the section horizontally
+                using a CSS layout method. Use <code>figure</code> elements to contain the <code>img</code>
+                elements and use <code>figcaption</code> captions for each <code>figure</code> image, labeling them with
+                the trip adventure name or the water rapid name, e.g., "Los Dientes del Diablo", "Big Mallard", "Half
+                Day Adventure", etc.
+                <div class="callout info">
+
+                    <h4>Help</h4>
+                    <pre><code class="html">&lt;figure&gt;
+  &lt;img src="images/..." alt="..."&gt;
+  &lt;figcaption&gt;...&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+                    <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" target="_blank">The
+                            Figure Element</a> &ndash; MDN</p>
+                </div>
+                <div class="callout info">
+                    <p>Use the <strong>image resources</strong> presented in the previous week's assignment to help you
+                        find free images
+                        to use on your page.</p>
+                </div>
+            </li>
+            <li>Style the <strong>footer</strong> so that the three social images fit in the space and are
+                arranged horizontally and to the right as pictured in the wireframe.</li>
+
+        </ol>
+
+        <h3>Testing</h3>
+        <ol>
+            <li>Every page in this course will be expected to pass the <a href="../dev-standards.html"
+                    target="_blank">development standards checklist</a>.</li>
+            <li>Continuously test the page in the local browser using <strong>Live/Five Server</strong>.</li>
+            <li><strong>Commit</strong> the changes and <strong>sync/push</strong> them to the wdd130 GitHub Pages
+                enabled repository.</li>
+            <li>Enter your GitHub username into this &#10004; <a href="../grader/w04-project-aboutus.html"
+                    target="_blank">page audit tool</a> to get a basic assessment of the HTML and CSS.</li>
+            <li>Check for <strong>color contrast</strong> violations at the AA level by using the ▶️ <a
+                    href="https://video.byui.edu/media/t/1_amt1b8xy" target="_blank">DevTools CSS Overview</a> tool.
+            </li>
+            <li>Check that the total transferred kiloBytes, <strong>page weight</strong>, does not exceed 500 kB.
+                <div class="callout warning">
+                    <p>Use the total transferred kB information provided by the browser's <a
+                            href="../dev-standards.html#pageweight" target="_blank">DevTools Network</a> panel. You will
+                        want to reload the page using <strong>Empty Cache and Reload</strong> when testing in the
+                        Network panel. If the total transferred amount is greater than 500 kB,
+                        it is likely that you forgot to optimize images.</p>
+                </div>
+            </li>
+        </ol>
+
+        <h3>Submission</h3>
+        <ol>
+            <li>Submit your GitHub pages URL (website address) in Canvas.<br>
+                Here is the sample URL where you will substitute your GitHub username for <em>githubusername</em>:<br>
+                <pre><code class="cli">https://<em>githubusername</em>.github.io/wdd130/wwr/about.html</code></pre>
+            </li>
+        </ol>
+
+    </main>
+    <footer>
+        <p>Copyright &copy; Brigham Young University-Idaho | All rights reserved</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="../scripts/prevent-code-select.js"></script>
+</body>
+
+</html>
