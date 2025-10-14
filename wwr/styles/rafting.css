@@ -158,7 +158,7 @@ nav {
 }
 
 
-.history-section {
+.history {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 32px;
@@ -172,14 +172,14 @@ nav {
     }
 }
 
-.adventures-section {
+.adventures img {
     display: flex;
     gap: 20px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.adventures-section figure {
+.adventures figure {
     flex: 1 1 160px;
     margin: 0;
     background: #f4f8fb;
