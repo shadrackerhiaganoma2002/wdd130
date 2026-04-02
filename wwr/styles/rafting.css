@@ -1,307 +1,375 @@
-
-
-:root {
-    --primary-color: #0077b6;
-    --secondary-color: #023e8a;
-    --background-light: #f4f8fb;
-    --hero-bg: #caf0f8;
-    --text-color: #222;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
 
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f4f8fb;
-    color: #222;
+    font-family: 'Outfit', 'Segoe UI', Arial, sans-serif;
+    background: #fdfdfd;
+    margin: 0;
+    padding: 0;
+    color: #333;
     line-height: 1.6;
 }
 
+/* Header & Nav */
 header {
-    background: #0077b6;
-    color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 32px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 0.75rem 4vw;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 header img {
-    border-radius: 50%;
+    height: 55px;
+    width: auto;
 }
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background 0.2s;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background 0.2s;
-}
-.hero {
-    position: relative;
-    display: flex;
-    align-items: center;
-    background: var(--hero-bg);
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
-    padding: 32px;
-    margin-bottom: 32px;
-    gap: 32px;
-    flex-wrap: wrap;
-    overflow: hidden;
-}
-
-.hero-box img {
-    float: right;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-}
-
-.hero-msg {
-    position: absolute;
-    top: 32px;
-    left: 32px;
-    background: rgba(255,255,255,0.85);
-    padding: 24px;
-    border-radius: 12px;
-    z-index: 2;
-    max-width: 60%;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-    background: #caf0f8;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
-    padding: 32px;
-    margin-bottom: 32px;
-    gap: 32px;
-    flex-wrap: wrap;
-}
-
-.hero-box img {
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-.hero-msg {
-    flex: 1;
-}
-
-.hero-msg h1 {
-    font-size: 2.5rem;
-    color: #0077b6;
-    margin-bottom: 12px;
-}
-
-.hero-msg h4 {
-    font-size: 1.25rem;
-    color: #023e8a;
-    margin-bottom: 20px;
-}
-
-.button-box {
-    margin-top: 16px;
-}
-
-.book {
-    display: inline-block;
-    background: #0077b6;
-    color: #fff;
-    padding: 12px 32px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-    transition: background 0.2s;
-}
-
-.book:hover {
-    background: #023e8a;
-}
-
-header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: 32px;
-}
-
 
 nav {
     display: flex;
-    gap: 24px;
-    justify-content: flex-end;
-    align-items: center;
+    gap: 1.5rem;
 }
 
+nav a {
+    text-decoration: none;
+    color: #00796b;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+}
 
-.history {
+nav a:hover {
+    color: #ffa000;
+}
+
+/* Hero section styles */
+.hero {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 32px;
-    align-items: center;
-}
-
-@media (max-width: 800px) {
-    .history-section {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-}
-
-.adventures img {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.adventures figure {
-    flex: 1 1 160px;
-    margin: 0;
-    background: #f4f8fb;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: start;
+    justify-items: center;
+    position: relative;
+    height: 55vh;
+    min-height: 350px;
+    padding-top: 0.5rem;
     overflow: hidden;
+}
+
+.hero-box {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-msg {
+    grid-column: 1;
+    grid-row: 1;
+    width: auto;
+    height: auto;
+    align-self: start;
+}
+
+.hero-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.5);
+}
+
+.hero-msg {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 160px;
-    max-width: 200px;
-}
-
-.adventures-section img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-}
-
-.adventures-section figcaption {
-    padding: 8px 12px;
-    font-size: 1rem;
-    color: #023e8a;
+    justify-content: center;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px) saturate(160%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%);
+    width: 90%;
+    max-width: 750px;
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     text-align: center;
-    background: #e0f7fa;
-    width: 100%;
+    animation: heroFadeIn 0.8s ease-out;
 }
 
-.team-members {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-bottom: 32px;
-}
-section {
-    margin-bottom: 32px;
-    background: #fff;
-    border-radius: 8px;
-    padding: 24px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-}
-
-section h2 {
-    color: #0077b6;
-    margin-bottom: 12px;
-    font-size: 1.5rem;
-}
-
-section p {
-    margin-bottom: 16px;
-    font-size: 1.1rem;
-}
-
-section img {
-    margin: 8px 12px 8px 0;
-    border-radius: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    vertical-align: middle;
-}
-
-footer {
-    background: #0077b6;
+.hero-msg h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin: 0;
     color: #fff;
-    text-align: center;
-    padding: 24px 0 16px 0;
-    margin-top: 48px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+    font-weight: 800;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    letter-spacing: -1px;
 }
 
-footer p {
-    margin-bottom: 12px;
+.hero-msg h4 {
+    font-size: clamp(1rem, 1.8vw, 1.25rem);
+    margin: 0.75rem 0 1.5rem;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.button-box .book {
+    background-color: #ffa000;
+    color: #fff;
+    padding: 12px 35px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
     font-size: 1rem;
-}
-
-footer a {
+    transition: all 0.3s ease;
     display: inline-block;
-    margin: 0 8px;
-    vertical-align: middle;
 }
 
-footer img {
-    vertical-align: middle;
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-    transition: transform 0.2s;
+.button-box .book:hover {
+    background-color: #ff8f00;
+    transform: translateY(-3px);
 }
 
-footer img:hover {
+@keyframes heroFadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+/* Page Sections */
+.history {
+    padding: 1.5rem 8vw;
+    text-align: center;
+    background: #f0f7f4;
+}
+
+.history img {
+    border-radius: 12px;
+    margin: 1rem 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    max-width: 100%;
+    height: auto;
+}
+
+.mission {
+    text-align: center;
+    padding: 1.5rem 4vw;
+    font-family: 'Times New Roman', Times, serif;
+    background: #fff;
+}
+
+.mission h2 {
+    color: #004d40;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.mission p {
+    font-size: 1.15rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #444;
+}
+
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 1.5rem 4vw;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+figure {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+    margin: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+figure:hover {
+    transform: translateY(-5px);
+}
+
+figure img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Footer */
+footer {
+    background: #004d40;
+    color: #fff;
+    padding: 1.5rem 4vw;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 1rem;
+}
+
+footer a img {
+    width: 20px;
+    height: 25px;
+    filter: invert(1);
+    transition: transform 0.3s ease;
+}
+
+footer a img:hover {
     transform: scale(1.1);
 }
+
+/* Trips Grid and Table */
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    padding: 1.5rem 4vw;
+}
+
+.trip-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+    text-align: center;
+}
+
+.table-container {
+    overflow-x: auto;
+    padding: 1.5rem 4vw;
+    background: #fdfdfd;
+}
+
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #00796b;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+/* Contact Page - Horizon Template Inspired */
+.contact-hero {
+    display: flex;
+    padding: 2.5rem 8vw;
+    gap: 4vw;
+    background: #fff;
+    align-items: center;
+}
+
+.hero-left {
+    flex: 1.5;
+}
+
+.hero-left h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin: 0;
+    font-weight: 500;
+    color: #111;
+}
+
+.hero-left p {
+    font-size: 1.15rem;
+    color: #666;
+    margin: 1rem 0 1.5rem;
+    max-width: 450px;
+}
+
+.info-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.info-group h3 {
+    text-transform: lowercase;
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-bottom: 0.5rem;
+}
+
+.featured-contact-img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.form-container {
+    padding: 2rem 8vw;
+    background: #fdfdfd;
+}
+
+.contact-form-clean h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-group input, .form-group textarea {
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    font-size: 0.95rem;
+}
+
+.submit-btn {
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+}
+
+.contact-social-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 20px;
+}
+
 @media (max-width: 900px) {
-    .hero {
+    .contact-hero {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 16px;
+        padding: 2rem 5vw;
+        gap: 2.5rem;
     }
-    main {
-        padding: 0 8px;
-    }
+}
+
+@media (max-width: 768px) {
     header {
         flex-direction: column;
-        gap: 12px;
-        padding: 12px 8px;
+        padding: 1.5rem;
     }
-    nav {
-        gap: 12px;
+    
+    .hero {
+        height: 50vh;
     }
 
-    .adventures-section {
-        flex-wrap: wrap;
-        gap: 12px;
-    }
-    .adventures-section figure {
-        min-width: 120px;
-        max-width: 160px;
-    }
-    .adventures-section img {
-        height: 80px;
+    .hero-msg {
+        padding: 1.5rem 1rem;
     }
 }

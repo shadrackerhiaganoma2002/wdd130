@@ -1,101 +1,114 @@
-
 main h1 {
     color: #0f40c5;
-    justify-content: center
-}
-main{
-    width: auto;
-    max-width: 900px;
-    margin: 1rem auto;
-    border: 1px solid rgba(236, 240, 243, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #0f40c5;
-    text-align: left;
-}
-header{
-    background-color: rgb(199, 206, 211);
-    border-radius: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
-    margin: 1rem;
-    padding: 0.5rem;
+    text-align: center;
 }
 
-p{
+main {
+    width: auto;
+    max-width: 900px;
+    margin: 0.5rem auto;
+    border: 1px solid rgba(236, 240, 243, 0.2);
+    padding: 0.75rem;
+    background-color: #eee;
+    color: #0f40c5;
+}
+
+header {
+    background-color: rgb(199, 206, 211);
+    border-radius: 0.5rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    margin: 0.5rem;
+    padding: 0.4rem;
+}
+
+p {
     font-style: italic;
     background-color: #fffbe6;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     border: 1px solid rgb(0 0 0 / 10%);
-    margin: 1rem;
-    padding: 1rem;
+    margin: 0.5rem;
+    padding: 0.75rem;
     color: #222;
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 main img {
     display: block;
-    margin: 0 auto 15px auto;
+    margin: 0 auto 10px auto;
     border: 1px solid #000;
-    padding: 3px;
+    padding: 2px;
     background-color: #bbb;
     width: 100px;
     height: auto;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-    box-sizing: border-box;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
 }
 
 nav {
     background-color: #c7ced3;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 nav a {
     color: #0f40c5;
-    padding: 0.5rem 1rem;
-    display: block;
+    padding: 0.4rem 0.8rem;
+    display: inline-block;
     text-decoration: none;
+    font-weight: bold;
 }
 
-aside{
+aside {
     width: auto;
-    margin: 1rem;
+    margin: 0.5rem;
     border: 1px solid #ccc;
-    padding: 1rem;
+    padding: 0.75rem;
     background-color: #f9f9f9;
     color: #0f40c5;
 }
 
-a h2 {
-    color: #0f40c5;
-    justify-content: center
-}
-
 aside img {
     display: block;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 15px auto;
     border: 1px solid #000;
-    padding: 3px;
+    padding: 2px;
     background-color: #bbb;
-    width: 200px;
+    width: 180px;
     height: auto;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-    box-sizing: border-box;
 }
 
-aside p{
-    font-style: italic;
-    background-color: #fffbe6;
-    border-radius: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
-    margin: 1rem;
-    padding: 1rem;
-    color: #222;
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
 footer {
-    margin-top: 2rem;
-    border-top: 2px solid #ccc;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-top: 1px solid #ccc;
     text-align: center;
+}
+
+/* Mobile Responsiveness for Root Portal */
+@media (max-width: 600px) {
+    header, aside, main {
+        margin: 0.25rem auto;
+        padding: 0.5rem;
+        max-width: 95%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 0.5rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    aside img {
+        width: 150px;
+    }
+
+    p {
+        font-size: 0.95rem;
+        padding: 0.5rem;
+    }
 }

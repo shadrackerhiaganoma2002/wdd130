@@ -8,6 +8,27 @@ body {
     margin: 1rem;
 }
 
+main h1 {
+    color: #171718;
+    justify-content: center
+}
+
+main h2 {
+    color: #171718;
+    justify-content: center
+}
+
+main{
+    width: auto;
+    max-width: 900px;
+    margin: 1rem auto;
+    border: 1px solid rgba(92, 175, 238, 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #0f40c5;
+    text-align: left;
+}
+
 p,
 div {
     background-color: beige;
@@ -16,7 +37,7 @@ div {
 }
 
 span {
-    color: navy;
+    color: rgb(22, 22, 29);
     background-color: lightblue;
 }
 
